@@ -55,7 +55,7 @@ const setupTextHover = (container,type) => {
   }
 }
 
-const welcome = () => {
+const Welcome = () => {
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
     useGSAP(() => {
@@ -89,4 +89,4 @@ const welcome = () => {
   )
 }
 
-export default welcome
+export default Welcome
