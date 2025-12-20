@@ -72,7 +72,7 @@ const Welcome = () => {
     <section id="welcome">
         <p ref={subtitleRef}>
           {renderText(
-            "Hey, I am Abhinav! Welcome to my",
+            "Hey, I'm Abhinav! Welcome to my",
             "text-3xl font-georama",
             100
         )}</p>
