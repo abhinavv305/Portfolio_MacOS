@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { Tooltip } from "react-tooltip";
 import useWindowStore from "#store/window";
 
-const dock = () => {
+const Dock = () => {
     const { openWindow, closeWindow, windows } = useWindowStore();
     const dockRef = useRef(null);
     useGSAP(() => {
@@ -92,4 +92,4 @@ const dock = () => {
     )
 }
 
-export default dock
+export default Dock
