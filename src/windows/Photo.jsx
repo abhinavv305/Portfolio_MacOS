@@ -3,7 +3,6 @@ import WindowWrapper from "#hoc/WindowWrapper";
 import WindowControls from "#components/WindowControls";
 import { gallery, photosLinks } from "#constants";
 import useWindowStore from "#store/window";
-
 const Photos = () => {
     const { openWindow } = useWindowStore();
 
