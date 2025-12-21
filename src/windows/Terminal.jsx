@@ -10,12 +10,12 @@ const Terminal = () => {
     <WindowControls target="terminal"/>
     <h2>Tech Stack</h2>
   </div>
-  <div className="techstack">
+  <div className="techstack bg-neutral-900 text-gray-200">
     <p>
         <span className="font-bold">@abhinav % </span>
         show tech stack
     </p>
-    <div className="label">
+    <div className="label"> 
         <p className="w-32">Category</p>
         <p>Technologies</p>
     </div>
@@ -33,12 +33,12 @@ const Terminal = () => {
             </li>
         ))}
     </ul>
-        <div className="footnote">
+        <div className="footnote text-white">
             <p>
                 <Check size={20}/> {techStack.length} of {techStack.length} Stacks loaded Successfully. (100%)
             </p>
-            <p className="text-black">
-                <Flag size={15} fill="black" />
+            <p className="text-white">
+                <Flag size={15} fill="red" />
                 Render time: 6ms
             </p>
         </div>
