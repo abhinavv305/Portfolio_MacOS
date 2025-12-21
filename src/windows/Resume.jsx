@@ -1,4 +1,4 @@
-import WindowWrapper from "#hoc/windowWrapper";
+import WindowWrapper from "#hoc/WindowWrapper";
 import { WindowControls } from "#components";
 import { Download } from "lucide-react";
 
