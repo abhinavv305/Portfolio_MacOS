@@ -39,7 +39,7 @@ const Terminal = () => {
             </p>
             <p className="text-white">
                 <Flag size={15} fill="red" />
-                Render time: 6ms
+                Render time: {Math.floor(Math.random() * 100)}ms
             </p>
         </div>
 
