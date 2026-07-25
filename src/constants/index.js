@@ -100,20 +100,43 @@ const blogPosts = [
 
 const techStack = [
   {
-    category: "Web-Dev",
-    items: [ "HTML", "CSS", "JavaScript", "React" , "Tailwind CSS"],
+    category: "Backend",
+    items: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+    ],
   },
   {
-    category: "Programming Languages",
-    items: ["C++","Python", "Java"],
+    category: "Programming",
+    items: [
+      "Java",
+      "C++",
+      "Python",
+      "JavaScript",
+    ],
   },
   {
-    category: "Database",
-    items: ["MySQL"],
+    category: "Databases",
+    items: [
+      "PostgreSQL",
+      "MySQL",
+    ],
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub"],
+    category: "Frontend",
+    items: [
+      "React",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    category: "Tools",
+    items: [
+      "Git",
+      "GitHub",
+      "Docker",
+    ],
   },
 ];
 
@@ -216,7 +239,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "ToDo Website",
+      name: "Financial Ledger System",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -224,36 +247,36 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "ToDo Project.txt",
+          name: "Financial Ledger System.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The To-Do App website is a clean and minimal platform designed to help users organize their daily tasks effortlessly.",
-            "Instead of a cluttered task manager, it focuses on simplicity and clarity, making task creation and tracking feel lightweight and intuitive.",
-            "Think of it like a digital checklist that keeps your thoughts organized—right from your phone or laptop.",
-            "It’s built with modern frontend technologies and deployed on Netlify, ensuring fast performance, responsive design, and a smooth user experience.",
+            "The Financial Ledger System is a secure backend application designed to simulate real-world banking operations.",
+            "It provides RESTful APIs for account management, fund transfers, transaction history, and user authentication using Spring Security and JWT.",
+            "The system ensures reliable and consistent transactions through ACID-compliant transaction management, pessimistic locking, and idempotency controls.",
+            "Built with Java 21, Spring Boot, PostgreSQL, Redis, and Docker, it emphasizes security, scalability, and production-ready backend development.",
           ],
         },
         {
           id: 2,
-          name: "todo.com",
+          name: "ledger.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://to-do-app-07.netlify.app/",
+          href: "https://github.com/abhinavv305/Real-Time-Financial-Ledger-System",
           position: "top-10 right-20",
         },
-        {
-          id: 4,
-          name: "todo.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
-        },
+        // {
+        //   id: 4,
+        //   name: "ledger.png",
+        //   icon: "/images/image.png",
+        //   kind: "file",
+        //   fileType: "img",
+        //   position: "top-52 right-80",
+        //   imageUrl: "/images/project-1.png",
+        // },
         // {
         //   id: 5,
         //   name: "Design.fig",
@@ -322,38 +345,38 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Netflix Clone",
+      name: "AI Driver Drowsiness Detection",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[40vh] left-50",
+      windowPosition: "top-[40vh] left-40",
       children: [
         {
           id: 1,
-          name: "Netflix Clone Project.txt",
+          name: "AI Driver Drowsiness Detection.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Netflix Clone is a sleek and immersive platform designed to explore movies and TV shows in a familiar streaming layout.",
-            "Instead of a static webpage, it recreates the Netflix experience with dynamic sections, featured banners, and smooth navigation.",
-            "Think of it like browsing Netflix itself—discovering entertainment right from your phone or laptop.",
-            "It’s built with modern web technologies like React and Tailwind CSS, delivering fast performance, responsive design, and a polished UI."
+            "The AI Driver Drowsiness Detection System is a real-time computer vision application designed to monitor driver alertness and reduce the risk of fatigue-related accidents.",
+            "It detects eye closure, blinking patterns, and yawning using facial landmark detection to identify signs of drowsiness and trigger instant alerts.",
+            "The system provides live monitoring with visual indicators, event logging, and screenshot capture, helping improve driver safety during long journeys.",
+            "Built with Python, OpenCV, dlib, and Flask, it delivers accurate real-time detection through an interactive web interface.",
           ],
         },
         {
           id: 2,
-          name: "netflix-clone.com",
+          name: "AI_Driver_Drowsiness_Detection",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://netflix-clone-delta-abhinav.vercel.app/",
+          href: "https://github.com/abhinavv305/AI_Driver_Drowsiness_Detection",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "netflix-clone.png",
+          name: "AI_Driver_Drowsiness_Detection.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -418,9 +441,10 @@ const ABOUT_LOCATION = {
       subtitle: "Meet the Developer Behind the Code",
       image: "/images/developer.png",
       description: [
-        "Hey! I’m Abhinav 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, and React , I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",      ],
+        "Hey! I'm Abhinav 👋, a Computer Science student passionate about building scalable backend applications and solving real-world problems through software.",
+        "I specialize in Java, Spring Boot, and RESTful API development, with hands-on experience in PostgreSQL, Docker, and secure authentication using Spring Security and JWT.",
+        "Beyond backend development, I enjoy solving Data Structures & Algorithms problems, exploring system design concepts, and continuously improving my software engineering skills.",
+      ],
     },
   ],
 };
